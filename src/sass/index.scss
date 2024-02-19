@@ -1,0 +1,30 @@
+///FOLDER BASE
+@import './base/normalize';
+@import './base/fonts';
+@import './base/colors';
+@import './base/cursor';
+@import './base/swipe-up';
+
+///FOLDER UTILS
+@import './utils/reset';
+@import './utils/mixins';
+@import './utils/command';
+
+///FOLDER COMPONENTS
+@import './components/buttons';
+@import './components/modal';
+
+///FOLDER LAYOUTS
+@import './layout/about';
+@import './layout/about-modal';
+@import './layout/advantages';
+@import './layout/contacts';
+@import './layout/contacts-modal';
+@import './layout/customer-reviews';
+@import './layout/footer';
+@import './layout/gallery';
+@import './layout/header';
+@import './layout/header-modal';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/products-modal';

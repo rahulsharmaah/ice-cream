@@ -1,0 +1,56 @@
+<div class="modal header-modal" data-modal="1">
+  <button type="button" class="modal__cross js-modal-close">
+    <svg class="icon-close">
+      <use href="./images/icons-sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="header-modal__title">Buy now</h2>
+  <ul class="header-modal__list">
+    <li class="header-modal__item">
+      <label class="header-modal__label">
+        <input class="header-modal__checkbox" type="checkbox" name="product" value="icecream" />
+        <span class="header-modal__product header-modal__product--icecream">
+          ice cream
+          <img class="product-img" srcset="
+              ./images/modal-icecream_@1x-min.png 1x,
+              ./images/modal-icecream_@2x-min.png 2x
+            " src="./images/modal-icecream_@1x-min.png" alt="ice-cream" />
+        </span>
+      </label>
+    </li>
+    <li class="header-modal__item">
+      <label class="header-modal__label">
+        <input class="header-modal__checkbox" type="checkbox" name="product" value="icecoffe" />
+        <span class="header-modal__product header-modal__product--icecoffee">
+          ice coffee
+          <img class="product-img" srcset="
+              ./images/modal-icecoffee_@1x-min.png 1x,
+              ./images/modal-icecoffee_@2x-min.png 2x
+            " src="./images/modal-icecoffee_@1x-min.png" alt="ice-coffee" />
+        </span>
+      </label>
+    </li>
+    <li class="header-modal__item">
+      <label class="header-modal__label">
+        <input class="header-modal__checkbox" type="checkbox" name="product" value="milkshake" />
+        <span class="header-modal__product header-modal__product--milkshake">milkshake
+          <img class="product-img" srcset="
+              ./images/modal-milkshake_@1x-min.png 1x,
+              ./images/modal-milkshake_@2x-min.png 2x
+            " src="./images/modal-milkshake_@1x-min.png" alt="milkshake" />
+        </span>
+      </label>
+    </li>
+  </ul>
+  <form class="header-modal__form">
+    <input class="header-modal__input buynow-js" type="text" required placeholder="Name" pattern="^[a-zA-Z]+$"
+      title="Name cannot contain numbers or symbols." />
+    <input class="header-modal__input buynow-js" type="tel" required placeholder="+91 ___ ___ ___" data-slots="_"
+      title="+91 ___ ___ ___" />
+    <textarea class="header-modal__input header-modal__comment" name="comment" placeholder="Comment" cols="30"
+      rows="10"></textarea>
+    <button class="submit-btn button buynow-button-js" type="submit">
+      Submit
+    </button>
+  </form>
+</div>

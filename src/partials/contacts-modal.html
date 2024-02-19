@@ -1,0 +1,59 @@
+<!-- Элементы для вызова модальных окон, могут быть любые -->
+
+<!-- <a href="#" class="js-open-modal" data-modal="2">Открыть окно 2</a>
+<a href="#" class="js-open-modal" data-modal="3">Открыть окно 3</a>
+
+ Несколько модальных окон -->
+
+<div class="modal modal-franchise" data-modal="franchise">
+  <!--   Svg иконка для закрытия окна  -->
+  <button type="button" class="modal__cross js-modal-close">
+    <svg width="20" height="20">
+      <use href="./images/icons-sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h2>
+  <p class="modal__text">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+
+  <form class="contacts-modal__form">
+    <input type="text" class="contacts-modal__input franchise-js" placeholder="Name" pattern="[a-zA-Z]+" title="Name" />
+    <input class="contacts-modal__input franchise-js" type="tel" name="phone number" placeholder="+91 ___ ___ ___"
+      data-slots="_" title="+91 000 000 000" required />
+    <input type="email" class="contacts-modal__input franchise-js" placeholder="Email" name="email" required />
+
+    <textarea class="contacts-modal__input contacts-modal__comment" name="comment" placeholder="Comment" cols="30"
+      rows="10"></textarea>
+    <button class="submit-btn button franchise-button-js" type="submit">
+      Submit
+    </button>
+  </form>
+</div>
+
+<!-- Модалка локація -->
+
+<div class="modal modal-locations" data-modal="locations">
+  <!--   Svg иконка для закрытия окна  -->
+  <button type="button" class="modal__cross js-modal-close">
+    <svg width="20" height="20">
+      <use href="./images/icons-sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title">Our Locations</h2>
+  <iframe class="modal__frame modal__frame--contacts" width="448" height="260"
+    src="https://www.google.com/maps/d/u/4/embed?mid=10A5pQGfCubwr38YBlwBycsSxgMWQ2V8&ehbc=2E312F" title="GOOGLE map"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+  <a href="https://www.google.com/maps/d/u/4/embed?mid=10A5pQGfCubwr38YBlwBycsSxgMWQ2V8&ehbc=2E312F" target="_blank"
+    rel="nofollow noindex noopener" class="button__contacts button" data-modal="Open map">
+    Open map
+  </a>
+</div>

@@ -1,0 +1,180 @@
+.header {
+  padding-top: 20px;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  @include font(700, 16px, 1.25, null);
+}
+
+.header__menu-button {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 32px;
+  background-color: $main-bg-color;
+
+  @media (max-width: 480px) {
+    margin-right: 0px;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.header-tab-desk__button {
+  @include font(600, 14px, 1.21, null);
+  background-color: $link-bg-color;
+  width: 152px;
+  height: 42px;
+  padding: 0px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-tab-desk__button {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.header-tab-desk__in-menu {
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header-tab-desk__button:hover {
+  background: $button-border-color;
+}
+
+.header-tab-desk__button:focus {
+  background: $button-border-color;
+  color: $accent-bg-color;
+}
+
+.header__icon-arrow {
+  fill: currentColor;
+  margin-left: 5px;
+}
+
+.modal__cross.header__modal-cros {
+  fill: $accent-bg-color;
+  width: 20px;
+  height: 20px;
+}
+
+.header-nav__link {
+  display: inline-block;
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.header-nav__link {
+  color: $main-text-color;
+}
+
+.header-nav__link:hover {
+  color: $link-bg-color;
+}
+
+.header-nav__link:focus {
+  color: $link-bg-color;
+}
+
+.header__logo-mobil.header__ise-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.header__mobil-menu.modal {
+  @include font(700, 48px, 1.23, null);
+  background-color: $main-bg-color;
+  transform: translateX(100%);
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+
+  @media (max-width: 480px) {
+    @include font(700, 32px, 1.21, null);
+  }
+}
+
+.header__mobil-menu.modal.active {
+  transform: translateX(0);
+}
+
+.header__mobil-menu-list {
+  padding-top: 76px;
+  @media (max-width: 480px) {
+    @include font(700, 32px, 1.21, null);
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+
+  @media (min-width: 480px) {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+}
+
+.header__mobil-menu-item {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.header__mobil-menu-item + .header__mobil-menu-item {
+  margin-top: 40px;
+  @media (max-width: 480px) {
+    margin-top: 32px;
+  }
+}
+
+.header__mobil-menu-link {
+  color: $accent-bg-color;
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+  }
+}

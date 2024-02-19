@@ -1,0 +1,120 @@
+.customer-reviews {
+  padding: 80px 0 40px;
+
+  @include mobile {
+    padding: 80px 0 60px;
+  }
+
+  @include tablet {
+    padding: 100px 0 80px;
+  }
+
+  @include desktop {
+    padding: 140px 0 100px;
+  }
+
+  &__container {
+    @include tel {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+
+  &__img-wrapp {
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+
+  &__img {
+    width: 85px;
+    height: 85px;
+  }
+
+  &__wrapp {
+    width: 280px;
+    height: 256px;
+    background: $main-bg-color;
+    border-radius: 10px;
+    padding: 35px 39px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    @include tablet {
+      width: 705px;
+      height: 138px;
+      padding: 28px 80px;
+      border-radius: 24px;
+    }
+
+    @include desktop {
+      width: 968px;
+      height: 138px;
+      border-radius: 24px;
+      padding: 43px 109px;
+    }
+  }
+
+  &__text {
+    @include font(400, 12px, 2.58, null);
+    text-align: center;
+    color: $title-color-white;
+
+    @include tablet {
+      @include font(500, 14px, 1.86, 0.04em);
+    }
+
+    @include desktop {
+      @include font(500, 16px, 1.88, 0.04em);
+    }
+  }
+
+  &__desc {
+    @include font(500, 20px, 1.85, null);
+    text-align: center;
+    color: $secondary-text-color;
+    margin-bottom: 12px;
+
+    @include tablet {
+      @include font(500, 16px, 1.88, null);
+      margin-bottom: 32px;
+    }
+
+    @include desktop {
+      @include font(500, 16px, 1.88, null);
+      margin-bottom: 32px;
+    }
+  }
+}
+
+///СТИЛИ СЛАЙДЕРА
+
+.swiper {
+  overflow: hidden;
+  z-index: 1;
+
+  &-slide {
+    padding-bottom: 20px;
+
+    @include tablet {
+      padding: 0;
+    }
+  }
+
+  &-pagination-bullet-active {
+    background-color: $main-bg-color;
+    width: 12px;
+    height: 12px;
+  }
+
+  &-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+}
